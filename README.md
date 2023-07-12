@@ -56,6 +56,11 @@ In order to run this project you need:
 -A code editor like VS code
 -Internet connection
 
+Also:
+
+npm install
+npm start
+
 ### Setup
 
 Clone this repository to your desired folder:
