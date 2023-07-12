@@ -47,19 +47,19 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
--Clone the repository.
--Create a directory in your device.
+- **[Clone the repository.]**
+- **[Create a directory in your device.]**
 
 ### Prerequisites
 
 In order to run this project you need:
--A code editor like VS code
--Internet connection
+- **[A code editor like VS code]**
+- **[Internet connection]**
 
 Also:
 
-npm install
-npm start
+- npm install
+- npm start
 
 ### Setup
 
