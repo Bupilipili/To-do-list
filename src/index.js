@@ -56,7 +56,7 @@ container.addEventListener('click', (event) => {
   const tasksInput = document.querySelectorAll('.description');
   tasksInput.forEach((input) => {
     input.addEventListener('input', (event) => {
-        const { index } = event.target.closest('.list-item').dataset;
+      const { index } = event.target.closest('.list-item').dataset;
       if (components[index]) {
         components[index].description = event.target.value;
         localStorage.setItem('toDoList', JSON.stringify(components));
