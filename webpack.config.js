@@ -36,7 +36,7 @@ module.exports = {
             name: '[name].[ext]',
             outputPath: 'images',
           },
-        }
+        },
       },
       {
         test: /\.js$/, // Apply loader to JavaScript files
