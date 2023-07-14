@@ -1,4 +1,3 @@
-
 export const addNewComponent = (componentDesc, componentsLength) => {
   const newComponent = {
     description: componentDesc,
@@ -13,7 +12,7 @@ export const removeComponents = (components, index) => {
   components.splice(index, 1);
   let i = index;
     while (i < components.length) {
-    components[i].index = i;
+  components[i].index = i;
     i += 1;
   }
 };
