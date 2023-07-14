@@ -1,4 +1,6 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable prefer-destructuring */
+
 import _ from 'lodash';
 import './style.css';
 import bin from './bin.svg';
@@ -6,13 +8,13 @@ import bin from './bin.svg';
 import { addNewComponent, removeComponents } from './modules/functions.js';
 
 const showComponents = (components) => {
-const container = document.querySelector('.to-do-list');
-container.innerHTML = ''; // Clears the container
+  const container = document.querySelector('.to-do-list');
+  container.innerHTML = ''; // Clears the container
 
-// Sort components array based on index property
-components.sort((a, b) => a.index - b.index);
+  // Sort components array based on index property
+  components.sort((a, b) => a.index - b.index);
 
-components.forEach((component) => {
+  components.forEach((component) => {
     const items = document.createElement('li');
     items.className = 'list-item';
     items.dataset.index = component.index;
@@ -24,52 +26,51 @@ components.forEach((component) => {
     </div>
     `;
     container.appendChild(items);
-    });
+  });
 };
-  
+
 const components = JSON.parse(localStorage.getItem('toDoList')) || [];
 const addList = document.querySelector('.input');
 addList.addEventListener('keyup', (event) => {
-event.preventDefault();
-if (event.key === 'Enter' && addList.value !== '') {
+  event.preventDefault();
+  if (event.key === 'Enter' && addList.value !== '') {
     const componentDesc = addList.value;
     components.push(addNewComponent(componentDesc, components.length));
     showComponents(components);
     localStorage.setItem('toDoList', JSON.stringify(components));
     addList.value = '';
-}
+  }
 });
 
 const container = document.querySelector('.to-do-list');
 container.addEventListener('click', (event) => {
-const remove = document.querySelectorAll('.delete-img');
-remove.forEach((icon, index) => {
+  const remove = document.querySelectorAll('.delete-img');
+  remove.forEach((icon, index) => {
     if (event.target === icon) {
-    removeComponents(components, index);
-    showComponents(components);
-    localStorage.setItem('toDoList', JSON.stringify(components));
-}
-});
+      removeComponents(components, index);
+      showComponents(components);
+      localStorage.setItem('toDoList', JSON.stringify(components));
+    }
+  });
 
-    // Edit case
-const tasksInput = document.querySelectorAll('.description');
-tasksInput.forEach((input) => {
+  // Edit case
+  const tasksInput = document.querySelectorAll('.description');
+  tasksInput.forEach((input) => {
     input.addEventListener('input', (event) => {
-    const index = event.target.closest('.list-item').dataset.index;
-    if (components[index]) {
+      const index = event.target.closest('.list-item').dataset.index;
+      if (components[index]) {
         components[index].description = event.target.value;
         localStorage.setItem('toDoList', JSON.stringify(components));
-    }
+      }
     });
     input.addEventListener('click', () => {
-    if (input.hasAttribute('readonly')) {
-    input.removeAttribute('readonly');
-    } else {
-    input.setAttribute('readonly', 'true');
-  }
-});
-});
+      if (input.hasAttribute('readonly')) {
+        input.removeAttribute('readonly');
+      } else {
+        input.setAttribute('readonly', 'true');
+      }
+    });
+  });
 });
 
-  window.addEventListener('load', () => showComponents(components));
- 
+window.addEventListener('load', () => showComponents(components));
