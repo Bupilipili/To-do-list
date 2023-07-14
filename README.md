@@ -78,8 +78,8 @@ Example commands:
 👤 **Bupilipili**
 
 - GitHub: [@bupilipili](https://github.com/bupilipili)
-- Twitter: [@ErickBupilipili](https://twitter.com/ErickBupilpili)
-- LinkedIn: [ErickBupilipili](https://linkedin.com/in/ErickBupilipili)
+- Twitter: [@ErickBupilipili](https://twitter.com/ErickBupilipili?t=UqGSzTxuad6me1Rf7eplPg&s=08)
+- LinkedIn: [ErickBupilipili](https://www.linkedin.com/in/erick-bupilipili-08ba31228)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
