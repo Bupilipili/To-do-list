@@ -11,8 +11,8 @@ export const addNewComponent = (componentDesc, componentsLength) => {
 export const removeComponents = (components, index) => {
   components.splice(index, 1);
   let i = index;
-    while (i < components.length) {
-  components[i].index = i;
+  while (i < components.length) {
+    components[i].index = i;
     i += 1;
   }
 };
