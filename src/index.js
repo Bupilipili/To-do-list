@@ -36,7 +36,7 @@ container.addEventListener('click', (event) => {
       if (components[index]) {
         components[index].description = event.target.value;
         localStorage.setItem('toDoList', JSON.stringify(components));
-        }
+      }
     });
     input.addEventListener('click', () => {
       if (input.hasAttribute('readonly')) {
