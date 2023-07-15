@@ -1,4 +1,3 @@
-
 import './style.css';
 
 import { addNewComponent, removeComponents } from './modules/functions.js';
