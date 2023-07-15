@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-
 import _ from 'lodash';
 import './style.css';
 import bin from './bin.svg';
@@ -16,7 +14,7 @@ const showComponents = (components) => {
   components.forEach((component) => {
     const items = document.createElement('li');
     items.className = 'list-item';
-    items.dataset.index = component.index;
+    items.dataset.index = component.index - 1;
     items.innerHTML = `
     <div class="listboxflex">
         <input class="check-box" type="checkbox">
