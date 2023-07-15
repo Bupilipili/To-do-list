@@ -1,7 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable comma-dangle */
-/* eslint-disable func-names */
-/* eslint-disable no-console */
+
 
 const express = require('express');
 const webpack = require('webpack');
@@ -19,8 +17,3 @@ app.use(
     publicPath: config.output.publicPath,
   })
 );
-
-// Serve the files on port 3003.
-app.listen(3003, () => {
-  console.log('Example app listening on port 3003!\n');
-});
