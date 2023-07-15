@@ -1,30 +1,10 @@
 import './style.css';
-
 import { addNewComponent, removeComponents } from './modules/functions.js';
+import updateComponents from './modules/updateComponents.js';
+import showComponents from './modules/showComponents.js';
+import clearCompletedTasks from './modules/clearCompletedTasks.js';
 
-const showComponents = (components) => {
-  const container = document.querySelector('.to-do-list');
-  container.innerHTML = ''; // Clears the container
-
-  // Sort components array based on index property
-  components.sort((a, b) => a.index - b.index);
-
-  components.forEach((component) => {
-    const items = document.createElement('li');
-    items.className = 'list-item';
-    items.dataset.index = component.index - 1;
-    items.innerHTML = `
-    <div class="listboxflex">
-        <input class="check-box" type="checkbox">
-        <input class="description" value="${component.description}" readonly>
-        <a><i class="fa-solid fa-trash delete-icon"></i></a>
-    </div>
-    `;
-    container.appendChild(items);
-  });
-};
-
-const components = JSON.parse(localStorage.getItem('toDoList')) || [];
+let components = JSON.parse(localStorage.getItem('toDoList')) || [];
 const addList = document.querySelector('.input');
 addList.addEventListener('keyup', (event) => {
   event.preventDefault();
@@ -65,6 +45,22 @@ container.addEventListener('click', (event) => {
         input.setAttribute('readonly', 'true');
       }
     });
+  });
+
+  // Checkbox status
+  const checkBoxes = document.querySelectorAll('.check-box');
+  checkBoxes.forEach((checkBox, index) => {
+    checkBox.addEventListener('change', () => {
+      updateComponents(components, index);
+      showComponents(components);
+    });
+  });
+
+  // Clear completed tasks
+  const clearBtn = document.querySelector('.clear');
+  clearBtn.addEventListener('click', () => {
+    components = clearCompletedTasks(components);
+    showComponents(components);
   });
 });
 
