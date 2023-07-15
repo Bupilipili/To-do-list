@@ -27,6 +27,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "@hint/utils-dom": "^2.2.4",
     "lodash": "^4.17.21"
   }
 }
