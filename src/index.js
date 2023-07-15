@@ -1,6 +1,5 @@
-import _ from 'lodash';
+
 import './style.css';
-import bin from './bin.svg';
 
 import { addNewComponent, removeComponents } from './modules/functions.js';
 
@@ -19,7 +18,7 @@ const showComponents = (components) => {
     <div class="listboxflex">
         <input class="check-box" type="checkbox">
         <input class="description" value="${component.description}" readonly>
-        <a class="delete-icon"><img class="delete-img" src="${bin}" alt="bin"></a>
+        <a><i class="fa-solid fa-trash delete-icon"></i></a>
     </div>
     `;
     container.appendChild(items);
@@ -41,7 +40,7 @@ addList.addEventListener('keyup', (event) => {
 
 const container = document.querySelector('.to-do-list');
 container.addEventListener('click', (event) => {
-  const remove = document.querySelectorAll('.delete-img');
+  const remove = document.querySelectorAll('.delete-icon');
   remove.forEach((icon, index) => {
     if (event.target === icon) {
       removeComponents(components, index);
