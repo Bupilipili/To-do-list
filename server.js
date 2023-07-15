@@ -1,5 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
 
 const express = require('express');
 const webpack = require('webpack');
@@ -15,5 +13,5 @@ const compiler = webpack(config);
 app.use(
   webpackDevMiddleware(compiler, {
     publicPath: config.output.publicPath,
-  })
+  }),
 );
