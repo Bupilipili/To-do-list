@@ -30,7 +30,13 @@ li {
 }
 
 .input {
-  border: 0;
+  border-bottom: 1px solid #c8c8c8;
+  padding: 1rem 1rem;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 90%;
 }
 
 ::placeholder {
@@ -54,4 +60,20 @@ li {
   text-decoration: none;
   color: #b7b7b7;
   text-align: center;
+}
+
+.delete-icon {
+  width: 20px;
+  height: 20px;
+  padding-left: 80px;
+}
+
+.description {
+  border: none;
+  outline: none;
+}
+
+.listboxflex {
+  display: flex;
+  align-items: center;
 }
