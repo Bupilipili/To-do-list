@@ -1,5 +1,5 @@
 import updateComponents from './modules/updateComponents.js';
-import editComponents from './modules/showComponents.js';
+import editComponents from './modules/editComponents.js';
 import clearCompletedTasks from './modules/clearCompletedTasks.js';
 
 
