@@ -1,7 +1,5 @@
 import { addNewComponent, removeComponents } from './modules/functions.js';
 
-//
-
 describe('addNewComponent', () => {
   test('should add a new component to the list correctly', () => {
     const componentDesc = 'New Component';
@@ -17,8 +15,6 @@ describe('addNewComponent', () => {
   });
 });
 
-//const { removeComponents } = require('./functions.js');
-
 describe('removeComponents', () => {
   test('should remove a component from the list correctly', () => {
     const components = [
@@ -32,10 +28,7 @@ describe('removeComponents', () => {
       { description: 'Component 3', completed: false, index: 2 },
     ];
 
-
     removeComponents(components, indexToRemove);
     expect(components).toEqual(expectedComponents);
   });
 });
-
-
