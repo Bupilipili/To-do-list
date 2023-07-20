@@ -2,8 +2,6 @@ import updateComponents from './modules/updateComponents.js';
 import editComponents from './modules/editComponents.js';
 import clearCompletedTasks from './modules/clearCompletedTasks.js';
 
-
-
   // Create a mock function for adding event listeners
   const addEventListenerMock = jest.fn((event, callback) => {
     // Implement your custom logic here (if needed)
