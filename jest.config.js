@@ -1,5 +1,4 @@
 module.exports = {
-    testEnvironment: 'jest-environment-jsdom',
-    // Your other Jest configuration options
-  };
-  
+  testEnvironment: 'jest-environment-jsdom',
+  // Your other Jest configuration options
+};

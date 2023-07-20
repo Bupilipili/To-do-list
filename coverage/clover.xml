@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1689871264223" clover="3.2.0">
-  <project timestamp="1689871264224" name="All files">
+<coverage generated="1689872518896" clover="3.2.0">
+  <project timestamp="1689872518896" name="All files">
     <metrics statements="28" coveredstatements="21" conditionals="4" coveredconditionals="0" methods="10" coveredmethods="8" elements="42" coveredelements="29" complexity="0" loc="28" ncloc="28" packages="1" files="4" classes="4"/>
     <file name="clearCompletedTasks.js" path="/Users/joyce/Documents/Microverse/exercises/To-do-list/src/modules/clearCompletedTasks.js">
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
