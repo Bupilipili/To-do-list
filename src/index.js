@@ -3,6 +3,7 @@ import { addNewComponent, removeComponents } from './modules/functions.js';
 import updateComponents from './modules/updateComponents.js';
 import showComponents from './modules/showComponents.js';
 import clearCompletedTasks from './modules/clearCompletedTasks.js';
+import editComponents from './modules/editComponents.js';
 
 let components = JSON.parse(localStorage.getItem('toDoList')) || [];
 const addList = document.querySelector('.input');
@@ -30,22 +31,8 @@ container.addEventListener('click', (event) => {
 
   // Edit case
   const tasksInput = document.querySelectorAll('.description');
-  tasksInput.forEach((input) => {
-    input.addEventListener('input', (event) => {
-      const { index } = event.target.closest('.list-item').dataset;
-      if (components[index]) {
-        components[index].description = event.target.value;
-        localStorage.setItem('toDoList', JSON.stringify(components));
-      }
-    });
-    input.addEventListener('click', () => {
-      if (input.hasAttribute('readonly')) {
-        input.removeAttribute('readonly');
-      } else {
-        input.setAttribute('readonly', 'true');
-      }
-    });
-  });
+
+  editComponents(components, tasksInput);
 
   // Checkbox status
   const checkBoxes = document.querySelectorAll('.check-box');
