@@ -1,7 +1,7 @@
 import editComponents from './modules/editComponents.js';
 
 // Create a mock function for adding event listeners
-const addEventListenerMock = jest.fn((event, callback) => {
+const addEventListenerMock = jest.fn(() => {
   // Implement your custom logic here (if needed)
   // For this example, we won't do anything
 });
@@ -39,9 +39,7 @@ describe('editComponents', () => {
       { description: 'Task 1', completed: false, index: 1 },
       { description: 'Task 2', completed: false, index: 2 },
     ];
-
     // Call the function with the mocked data
     editComponents(components, tasksInputMock);
-
   });
 });
