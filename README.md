@@ -26,9 +26,9 @@
 
 
 
-# 📖 [To do list] <a name="about-project"></a>
+# 📖 To do list <a name="about-project"></a>
 
-**[To do list]** is an application that allows users to add the list of activities they want to do. 
+**To do list** is an application that allows users to add the list of activities they want to do. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
