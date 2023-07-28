@@ -2,7 +2,6 @@
   "name": "web-pack",
   "version": "1.0.0",
   "description": "",
-  "private": true,
   "scripts": {
     "test": "jest --coverage",
     "start": "webpack serve --open",
