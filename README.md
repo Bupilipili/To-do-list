@@ -41,21 +41,21 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Adding and removing activities]**
+- **Adding and removing activities**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
-- **[Clone the repository.]**
-- **[Create a directory in your device.]**
+- **Clone the repository.**
+- **Create a directory in your device.**
 
 ### Prerequisites
 
 In order to run this project you need:
-- **[A code editor like VS code]**
-- **[Internet connection]**
+- **A code editor like VS code**
+- **Internet connection**
 
 Also:
 
@@ -76,7 +76,7 @@ Example commands:
 
 ## 🌍 Online Version <a name="online-version"></a>
   
-  https://bupilipili.github.io/To-do-list/
+  https://bupilipili.github.io/To-do-list/dist/
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
