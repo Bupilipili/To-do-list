@@ -5,8 +5,7 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   devServer: {
-    static: './dist',
-    publicPath: '/To-do-list/dist/',
+    static: './dist'
   },
   plugins: [
     new HtmlWebpackPlugin({
