@@ -36,7 +36,7 @@ li {
   border-top: none;
   border-left: none;
   border-right: none;
-  width: 90%;
+  width: 80vw;
 }
 
 ::placeholder {
@@ -65,7 +65,8 @@ li {
 .delete-icon {
   width: 20px;
   height: 20px;
-  padding-left: 80px;
+  position: absolute;
+  left: 86vw;
 }
 
 .description {
@@ -74,6 +75,5 @@ li {
 }
 
 .listboxflex {
-  display: flex;
-  align-items: center;
+  display: block;
 }
